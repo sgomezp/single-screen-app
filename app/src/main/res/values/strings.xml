@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Libreria Serendipias</string>
+    <string name="descripcion_libreria">Libros y más: talleres, eventos literarios, cuentacuentos, clubes de lectura</string>
+    <string name="phone">"+34 913 486 121</string>
+    <string name="email">info@serendipias.com </string>
+    <string name="horario"><b>Lunes a Viernes:</b>       \n10:00 - 14:00 / 17:00 - 20:30 \n<b>Sabados:</b>  \n10:00 - 14:00</string>
+    <string name="direccion"><a href="https://goo.gl/maps/XY6cvw95tNN2">Sector Foresta, 41 \nTres Cantos. Madrid</a></string>
+
+    <string name="fa_icon_facebook_official"><a href="https://www.facebook.com/libreriaserendipias/">&#xf230;</a></string>
+    <string name="fa_icon_phone_square">&#xf095;</string>
+    <string name="fa_icon_envelope">&#xf003;</string>
+    <string name="fa_icon_clock">&#xf017;</string>
+    <string name="fa_icon_web"><a href="http://www.serendipiaslibrosymas.com">&#xf268;</a></string>
+    <string name="fa_icon_instagram"><a href="https://www.instagram.com/libreriaserendipias/">&#xf16d;</a></string>
+    <string name="fa_icon_pin">&#xf041;</string>
+</resources>

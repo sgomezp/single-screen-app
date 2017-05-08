@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:context="com.sandragomezs.libreriaserendipias.MainActivity">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:src="@drawable/logoseren"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+        <ImageView
+            android:id="@+id/imageViewFoto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:padding="5dp"
+            android:src="@drawable/serendipias"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewLogo"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+        <TextView
+            android:id="@+id/textViewDescripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:shadowColor="@color/shadow"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="@string/descripcion_libreria"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewFoto"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
+
+
+        <TextView
+            android:id="@+id/textViewIconoMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/fa_icon_envelope"
+            android:textSize="@dimen/icono_size"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDescripcion" />
+
+        <TextView
+            android:id="@+id/textViewMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:autoLink="email"
+            android:gravity="start"
+            android:linksClickable="true"
+            android:text="@string/email"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textViewIconoMail"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline" />
+
+
+        <TextView
+            android:id="@+id/textViewPhone_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:autoLink="phone"
+            android:gravity="start"
+            android:linksClickable="true"
+            android:text="@string/phone"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textViewIconoPhone_txt"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline" />
+
+
+        <TextView
+            android:id="@+id/textViewIconoPhone_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/fa_icon_phone_square"
+            android:textSize="@dimen/icono_size"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewIconoMail" />
+
+
+        <TextView
+            android:id="@+id/textViewIconoHorario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/fa_icon_clock"
+            android:textSize="@dimen/icono_size"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewIconoPhone_txt" />
+
+        <TextView
+            android:id="@+id/textViewHorario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="start"
+            android:paddingBottom="0dp"
+            android:text="@string/horario"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textViewIconoHorario"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline" />
+
+        <TextView
+            android:id="@+id/textViewIconoDireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="@string/fa_icon_pin"
+            android:textSize="@dimen/icono_size"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewIconoHorario" />
+
+        <TextView
+            android:id="@+id/textViewDireccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:gravity="start"
+            android:linksClickable="true"
+            android:paddingTop="5dp"
+            android:text="@string/direccion"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textViewIconoDireccion"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25555557"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.14722222"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TableRow
+            android:id="@+id/tableContactIcons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/guideline"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDireccion">
+
+            <TextView
+                android:id="@+id/textViewIconoFb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:linksClickable="true"
+                android:text="@string/fa_icon_facebook_official"
+                android:textSize="@dimen/icono_redes"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewIconoInstagram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="32dp"
+                android:linksClickable="true"
+                android:text="@string/fa_icon_instagram"
+                android:textSize="@dimen/icono_redes"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/textViewIconoFb" />
+
+            <TextView
+                android:id="@+id/textViewIconoWeb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="32dp"
+                android:linksClickable="true"
+                android:text="@string/fa_icon_web"
+                android:textSize="@dimen/icono_redes"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/textViewIconoInstagram" />
+        </TableRow>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
